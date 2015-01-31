@@ -317,4 +317,14 @@ describe Resize::Validation do
       end
     end
   end
+
+  context "validate is equals" do
+    it "should return true" do
+      expect(subject.validate(equals: ["rails", "rails"])).to eq(true)
+    end
+
+    it "should return false" do
+      expect(subject.validate(equals: ["rails", "ruby"])).to eq(false)
+    end
+  end
 end
