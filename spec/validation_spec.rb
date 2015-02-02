@@ -326,5 +326,15 @@ describe Resize::Validation do
     it "should return false" do
       expect(subject.validate(equals: ["rails", "ruby"])).to eq(false)
     end
+
+    context "validate with raise error" do
+      it "should return true" do
+        expect(subject.validate!(equals: ["rails", "rails"])).to eq(true)
+      end
+
+      it "should return false" do
+        expect{ subject.validate!(equals: ["rails", "railss"])}.to raise_error('The input ["rails", "railss"] does not match the rule equals')
+      end
+    end    
   end
 end
