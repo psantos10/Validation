@@ -103,6 +103,7 @@ Rules
 * [is_json](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_json.rb "Title")
 * [is_rg](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_rg.rb "Title")
 * [is_domain](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_uppercase.rb "Title")
+* [is_equals](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_equals.rb "Title")
 
 ###Contributing
 
