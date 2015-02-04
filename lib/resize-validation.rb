@@ -15,5 +15,5 @@ require "resize/rules/is_uppercase"
 require "resize/rules/is_domain"
 require "resize/rules/is_rg"
 require "resize/rules/is_equals"
-
+require "resize/rules/is_contains"
 module Resize; end
