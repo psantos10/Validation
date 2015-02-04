@@ -337,4 +337,25 @@ describe Resize::Validation do
       end
     end    
   end
+
+  context "validate is contains" do
+    it "should return true" do
+      expect(subject.validate(contains: ["Ruby on Rails", "Rails"])).to eq(true)
+    end
+
+    it "should return false" do
+      expect(subject.validate(contains: ["Ruby on Rails", "Django"])).to eq(false)
+    end
+
+    context "validate with raise error" do
+      it "should return true" do
+        expect(subject.validate!(contains: ["Ruby on Rails", "Rails"])).to eq(true)
+      end
+
+      it "should return false" do
+        error = 'The input ["Ruby on Rails", "Django"] does not match the rule contains'
+        expect{ subject.validate!(contains: ["Ruby on Rails", "Django"])}.to raise_error(error)
+      end
+    end
+  end
 end
