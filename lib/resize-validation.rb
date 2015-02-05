@@ -16,4 +16,5 @@ require "resize/rules/is_domain"
 require "resize/rules/is_rg"
 require "resize/rules/is_equals"
 require "resize/rules/is_contains"
+require "resize/rules/is_roman"
 module Resize; end
