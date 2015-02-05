@@ -400,4 +400,25 @@ describe Resize::Validation do
       end
     end
   end
+
+  context "validate is begins" do
+    it "should return true" do
+      expect(subject.validate(begins: ["My name is Marco Polo", "My"])).to eq(true)
+    end
+
+    it "should return false" do
+      expect(subject.validate(begins: ["My name is Marco Polo", "Maria"])).to eq(false)
+    end
+
+    context "validate with raise error" do
+      it "should return true" do
+        expect(subject.validate!(begins: ["My name is Marco Polo", "My"])).to eq(true)
+      end
+
+      it "should return false" do
+        error = 'The input ["My name is Marco Polo", "Maria"] does not match the rule begins'
+        expect{ subject.validate!(begins: ["My name is Marco Polo", "Maria"])}.to raise_error(error)
+      end
+    end
+  end
 end
