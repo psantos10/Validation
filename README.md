@@ -105,6 +105,7 @@ Rules
 * [is_domain](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_uppercase.rb "Title")
 * [is_equals](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_equals.rb "Title")
 * [is_contains](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_contains.rb "Title")
+* [is_roman](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_roman.rb "Title")
 
 ###Contributing
 
