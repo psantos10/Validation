@@ -106,6 +106,7 @@ Rules
 * [is_equals](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_equals.rb "Title")
 * [is_contains](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_contains.rb "Title")
 * [is_roman](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_roman.rb "Title")
+* [is_ends](https://github.com/Resize/Validation/blob/master/lib/resize/rules/is_ends.rb "Title")
 
 ###Contributing
 
