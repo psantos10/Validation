@@ -358,4 +358,25 @@ describe Resize::Validation do
       end
     end
   end
+
+  context "validate is roman" do
+    it "should return true" do
+      expect(subject.validate(roman: "X")).to eq(true)
+    end
+
+    it "should return false" do
+      expect(subject.validate(roman: "XBAR")).to eq(false)
+    end
+
+    context "validate with raise error" do
+      it "should return true" do
+        expect(subject.validate(roman: "XX")).to eq(true)
+      end
+
+      it "should return false" do
+        error = 'The input XBAR does not match the rule roman'
+        expect{ subject.validate!(roman: "XBAR")}.to raise_error(error)
+      end
+    end
+  end
 end
